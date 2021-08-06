@@ -8,4 +8,4 @@
 
 Commit must follow the [Conventional Commits specification](https://conventionalcommits.org/).
 
-## In progress...
+## In progress
