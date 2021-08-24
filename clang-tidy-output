@@ -1,4 +1,4 @@
-/mnt/c/Users/willi/OneDrive/Bureau/Project/perso/chess/test/test.cc:3:1: error: initialization of 'test_info_' with static storage duration may throw an exception that cannot be caught [cert-err58-cpp,-warnings-as-errors]
+test/test.cc:3:1: error: initialization of 'test_info_' with static storage duration may throw an exception that cannot be caught [cert-err58-cpp,-warnings-as-errors]
 TEST(foo, bar) {
 ^
 /usr/local/include/gtest/gtest.h:2353:42: note: expanded from macro 'TEST'
@@ -13,7 +13,7 @@ TEST(foo, bar) {
 /usr/local/include/gtest/internal/gtest-internal.h:493:3: note: possibly throwing constructor declared here
   CodeLocation(const std::string& a_file, int a_line)
   ^
-/mnt/c/Users/willi/OneDrive/Bureau/Project/perso/chess/test/test.cc:3:1: error: initializing non-owner argument of type 'testing::internal::TestFactoryBase *' with a newly created 'gsl::owner<>' [cppcoreguidelines-owning-memory,-warnings-as-errors]
+test/test.cc:3:1: error: initializing non-owner argument of type 'testing::internal::TestFactoryBase *' with a newly created 'gsl::owner<>' [cppcoreguidelines-owning-memory,-warnings-as-errors]
 TEST(foo, bar) {
 ^
 /usr/local/include/gtest/gtest.h:2353:42: note: expanded from macro 'TEST'
@@ -25,7 +25,7 @@ TEST(foo, bar) {
 /usr/local/include/gtest/internal/gtest-internal.h:1556:11: note: expanded from macro 'GTEST_TEST_'
           new ::testing::internal::TestFactoryImpl<GTEST_TEST_CLASS_NAME_(    \
           ^
-/mnt/c/Users/willi/OneDrive/Bureau/Project/perso/chess/test/test.cc:3:1: error: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls,-warnings-as-errors]
+test/test.cc:3:1: error: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls,-warnings-as-errors]
 TEST(foo, bar) {
 ^
 /usr/local/include/gtest/gtest.h:2353:42: note: expanded from macro 'TEST'
@@ -41,7 +41,7 @@ note: expanded from here
 /usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/basic_string.h:525:39: note: default parameter was declared here
       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
                                       ^
-/mnt/c/Users/willi/OneDrive/Bureau/Project/perso/chess/test/test.cc:3:1: error: static objects are disallowed; if possible, use a constexpr constructor instead [fuchsia-statically-constructed-objects,-warnings-as-errors]
+test/test.cc:3:1: error: static objects are disallowed; if possible, use a constexpr constructor instead [fuchsia-statically-constructed-objects,-warnings-as-errors]
 TEST(foo, bar) {
 ^
 /usr/local/include/gtest/gtest.h:2353:42: note: expanded from macro 'TEST'
@@ -53,7 +53,7 @@ TEST(foo, bar) {
 /usr/local/include/gtest/internal/gtest-internal.h:1547:3: note: expanded from macro 'GTEST_TEST_'
   ::testing::TestInfo* const GTEST_TEST_CLASS_NAME_(test_suite_name,          \
   ^
-/mnt/c/Users/willi/OneDrive/Bureau/Project/perso/chess/test/test.cc:4:5: error: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls,-warnings-as-errors]
+test/test.cc:4:5: error: calling a function that uses a default argument is disallowed [fuchsia-default-arguments-calls,-warnings-as-errors]
     ASSERT_TRUE(true);
     ^
 /usr/local/include/gtest/gtest.h:1990:32: note: expanded from macro 'ASSERT_TRUE'
